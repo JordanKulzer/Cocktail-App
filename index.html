@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cocktail App</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="mobile-container">
+            <h2>Cocktail Finder</h2>
+            <header>
+                <input type="text" id="search-term" placeholder="Enter main ingredient..."/>
+                <button id="search"><i class="fas fa-search"></i></button>
+            </header>
+            <div class="fav-container">
+                <h3>Favorite Drinks</h3>
+                <ul class="fav-drinks" id="fav-drinks"></ul>
+            </div>
+            <div class="drinks" id="drinks"></div>
+        </div>
+
+        <div class="popup-container hidden" id="drink-popup">
+            <div class="popup">
+                <button id="close-popup" class="close-popup">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="drink-info" id="drink-info"></div>
+            </div>
+        </div>
+    </body>
+</html>
